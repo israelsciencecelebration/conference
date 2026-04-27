@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>חגיגת מדע ישראלית – 26.10.26</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --paper: #fafaf7;
+      --accent: #8b1e1e;
+      --muted: #6b6b6b;
+      --rule: #d8d4cc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Assistant', -apple-system, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 6rem;
+    }
+
+    header {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-family: 'Assistant', sans-serif;
+      font-weight: 700;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .date {
+      font-family: 'Assistant', sans-serif;
+      font-weight: 400;
+      font-size: 1.125rem;
+      color: var(--muted);
+      margin: 0;
+      letter-spacing: 0.005em;
+    }
+
+    ul.conferences {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.conferences li {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.75rem 1.25rem;
+    }
+
+    ul.conferences li:first-child {
+      padding-top: 0;
+    }
+
+    .topic {
+      font-family: 'Assistant', sans-serif;
+      font-weight: 700;
+      font-size: 1.375rem;
+      color: var(--ink);
+      margin-left: 0.5rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 0.5rem;
+      column-gap: 0;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 1px;
+      transition: border-color 0.15s ease;
+    }
+
+    .links a:hover,
+    .links a:focus {
+      border-bottom-color: var(--accent);
+      outline: none;
+    }
+
+    .links a + a::before {
+      content: "·";
+      color: var(--muted);
+      margin: 0 0.65rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>חגיגת מדע ישראלית</h1>
+      <p class="date">כנסים במגוון תחומים ב־26.10.26</p>
+    </header>
+
+    <ul class="conferences">
+      <li>
+        <span class="topic">כלכלה</span>
+        <span class="links">
+          <a href="#">מיקום</a>
+          <a href="#">פרטים</a>
+          <a href="#">הרשמה</a>
+        </span>
+      </li>
+      <li>
+        <span class="topic">תחום נוסף 1</span>
+        <span class="links">
+          <a href="#">מיקום</a>
+          <a href="#">פרטים</a>
+          <a href="#">הרשמה</a>
+        </span>
+      </li>
+      <li>
+        <span class="topic">תחום נוסף 2</span>
+        <span class="links">
+          <a href="#">מיקום</a>
+          <a href="#">פרטים</a>
+          <a href="#">הרשמה</a>
+        </span>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
