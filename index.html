@@ -95,15 +95,16 @@
 
     .links a {
       color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      padding-bottom: 1px;
-      transition: border-color 0.15s ease;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: text-decoration-color 0.15s ease;
     }
 
     .links a:hover,
     .links a:focus {
-      border-bottom-color: var(--accent);
+      text-decoration-color: var(--accent);
       outline: none;
     }
 
@@ -119,7 +120,7 @@
   <main class="page">
     <header>
       <h1>חגיגת מדע ישראלית</h1>
-      <p class="date">כנסים במגוון תחומים ב־26.10.26</p>
+      <p class="date">כנסים בינ״ל במגוון תחומים לחוקרים ישראלים · 26.10.26</p>
     </header>
 
     <ul class="conferences">
